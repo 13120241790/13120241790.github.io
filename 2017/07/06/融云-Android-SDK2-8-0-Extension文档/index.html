@@ -6,17 +6,36 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 阿明的技术博客</title>
+  <title>融云_Android_SDK2.8.0+_Extension文档 | 阿明的技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="make a decision and keep on!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="阿明的技术博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="融云 sdk 2.8.0 后对 会话界面输入区域、+号扩展区域、语音消息、emoji 等进行了优化和重构，重构后上列区域有个统一的名称: Extension。本篇文档将会对 Extension 的概念，用法，自定义进行逐一讲解。  概念默认 见上图 Extension 即是整个标识了红框的区域，默认包含如下:  Text 文字输入区域 Voice 语音消息区域(按住说话) Plugin 功能插件">
+<meta property="og:type" content="article">
+<meta property="og:title" content="融云_Android_SDK2.8.0+_Extension文档">
+<meta property="og:url" content="http://yoursite.com/2017/07/06/融云-Android-SDK2-8-0-Extension文档/index.html">
 <meta property="og:site_name" content="阿明的技术博客">
-<meta property="og:description" content="make a decision and keep on!">
+<meta property="og:description" content="融云 sdk 2.8.0 后对 会话界面输入区域、+号扩展区域、语音消息、emoji 等进行了优化和重构，重构后上列区域有个统一的名称: Extension。本篇文档将会对 Extension 的概念，用法，自定义进行逐一讲解。  概念默认 见上图 Extension 即是整个标识了红框的区域，默认包含如下:  Text 文字输入区域 Voice 语音消息区域(按住说话) Plugin 功能插件">
+<meta property="og:image" content="http://img.blog.csdn.net/20161123114549358">
+<meta property="og:image" content="http://img.blog.csdn.net/20161123114741468">
+<meta property="og:image" content="http://img.blog.csdn.net/20161121163017922">
+<meta property="og:image" content="http://img.blog.csdn.net/20161121180725851">
+<meta property="og:image" content="http://img.blog.csdn.net/20161121180755430">
+<meta property="og:image" content="http://img.blog.csdn.net/20161121180830954">
+<meta property="og:image" content="http://img.blog.csdn.net/20161122114108831">
+<meta property="og:image" content="http://img.blog.csdn.net/20161122110005486">
+<meta property="og:image" content="http://img.blog.csdn.net/20161123114942370">
+<meta property="og:image" content="http://img.blog.csdn.net/20161123115034121">
+<meta property="og:image" content="http://img.blog.csdn.net/20161121170458576">
+<meta property="og:image" content="http://img.blog.csdn.net/20161121173745573">
+<meta property="og:image" content="http://img.blog.csdn.net/20161122161425924">
+<meta property="og:image" content="http://img.blog.csdn.net/20161122164322919">
+<meta property="og:image" content="http://img.blog.csdn.net/20161123114429748">
+<meta property="og:image" content="http://img.blog.csdn.net/20161123113854825">
+<meta property="og:image" content="http://img.blog.csdn.net/20161123113744480">
+<meta property="og:updated_time" content="2017-07-06T03:48:42.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="阿明的技术博客">
-<meta name="twitter:description" content="make a decision and keep on!">
+<meta name="twitter:title" content="融云_Android_SDK2.8.0+_Extension文档">
+<meta name="twitter:description" content="融云 sdk 2.8.0 后对 会话界面输入区域、+号扩展区域、语音消息、emoji 等进行了优化和重构，重构后上列区域有个统一的名称: Extension。本篇文档将会对 Extension 的概念，用法，自定义进行逐一讲解。  概念默认 见上图 Extension 即是整个标识了红框的区域，默认包含如下:  Text 文字输入区域 Voice 语音消息区域(按住说话) Plugin 功能插件">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20161123114549358">
   
     <link rel="alternative" href="/atom.xml" title="阿明的技术博客" type="application/atom+xml">
   
@@ -144,103 +163,286 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-融云-Android-SDK2-8-0-Extension文档" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      融云_Android_SDK2.8.0+_Extension文档
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/06/融云-Android-SDK2-8-0-Extension文档/" class="archive-article-date">
+
+        
+        <a href="/2017/07/06/融云-Android-SDK2-8-0-Extension文档/" class="archive-article-date">
   	<time datetime="2017-07-06T03:47:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-06</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/06/融云-Android-SDK2-8-0-Extension文档/">融云_Android_SDK2.8.0+_Extension文档</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>融云 sdk 2.8.0 后对 会话界面输入区域、+号扩展区域、语音消息、emoji 等进行了优化和重构，重构后上列区域有个统一的名称: Extension。本篇文档将会对 Extension 的概念，用法，自定义进行逐一讲解。</p>
+</blockquote>
+<h1 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h1><h3 id="默认"><a href="#默认" class="headerlink" title="默认"></a>默认</h3><p><img src="http://img.blog.csdn.net/20161123114549358" alt="这里写图片描述"></p>
+<p>见上图 Extension 即是整个标识了红框的区域，默认包含如下:</p>
+<ul>
+<li>Text 文字输入区域</li>
+<li>Voice 语音消息区域(按住说话)</li>
+<li>Plugin 功能插件扩展区域 (相册，位置，音视频等)</li>
+<li>Emoji 表情区域 (包含 EmoticonTabs 扩展区域)</li>
+</ul>
+<h3 id="自定义"><a href="#自定义" class="headerlink" title="自定义"></a>自定义</h3><p><em>Extension</em> 目前提供了两种自定义方式 : </p>
+<p>1 自定义增加扩展区域功能插件 PluginModules</p>
+<p><img src="http://img.blog.csdn.net/20161123114741468" alt="这里写图片描述"></p>
+<p>上图红色 TODO 红框区域即是可供开发者自定义新功能插件，目前包含可功能自定义，以及对功能插件的自定义排序。另外功能插件的展示也可根据不同的会话类型来调整。</p>
+<p>2 自定义 EmoticonTabs 扩展区域</p>
+<p><img src="http://img.blog.csdn.net/20161121163017922" alt="这里写图片描述"></p>
+<p>此处可供开发者自定义扩展</p>
+<p>SDK 提供的表情扩展如下图</p>
+<p><img src="http://img.blog.csdn.net/20161121180725851" alt="这里写图片描述"><br><img src="http://img.blog.csdn.net/20161121180755430" alt="这里写图片描述"><br><img src="http://img.blog.csdn.net/20161121180830954" alt="这里写图片描述"></p>
+<hr>
+<h1 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h1><h3 id="RongExtension"><a href="#RongExtension" class="headerlink" title="RongExtension"></a>RongExtension</h3><p>输入区域扩展栏接口类为 RongExtension。</p>
+<ol>
+<li><p>目前 IMKit 中已经在布局文件中 rc_fr_conversation.xml 默认添加了 RongExtension 模块。</p>
+</li>
+<li><p>开发者只需要继承 ConversationFragment, 在 onCreateView 通过 view.findViewById()  找到 RongExtension 模块即可。</p>
+</li>
+<li><p>还可以通过 ConversationFragment 访问到 RongExtension 中各个组件被点击的事件，及内部  EditText 文本变化等方法。</p>
+</li>
+</ol>
+<p><img src="http://img.blog.csdn.net/20161122114108831" alt="网络下可见"></p>
+<p>RCStyle SDK提供了 5 种供开发者调整的样式（默认为 SCE）:</p>
+<table>
+<thead>
+<tr>
+<th>style</th>
+<th>组合模式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SCE</td>
+<td>语音/文本切换功能+内容输入功能+扩展功能</td>
+</tr>
+<tr>
+<td>SC</td>
+<td>语音/文本切换功能+内容输入功能</td>
+</tr>
+<tr>
+<td>EC</td>
+<td>扩展功能+内容输入功能</td>
+</tr>
+<tr>
+<td>CE</td>
+<td>内容输入功能+扩展功能</td>
+</tr>
+<tr>
+<td>C</td>
+<td>内容输入功能</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>以上的 5 种组合开发者可在 rc_fr_conversation.xml 里 app:RCStyle=”SCE” ，更改默认输入显示形式。也可动态调用 RongExtension 提供的方法代码设置。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line">  * 设置 ExtensionBar 样式.</div><div class="line">  *</div><div class="line">  * @param style 目前支持 5 种样式，参照: &#123;@link io.rong.imkit.InputBar.Style&#125;</div><div class="line">  */</div><div class="line"> public void setInputBarStyle(InputBar.Style style) &#123;</div><div class="line">     switch (style) &#123;</div><div class="line">         case STYLE_SWITCH_CONTAINER_EXTENSION:</div><div class="line">             setSCE();</div><div class="line">             break;</div><div class="line">         case STYLE_CONTAINER:</div><div class="line">             setC();</div><div class="line">             break;</div><div class="line">         case STYLE_CONTAINER_EXTENSION:</div><div class="line">             setCE();</div><div class="line">             break;</div><div class="line">         case STYLE_EXTENSION_CONTAINER:</div><div class="line">             setEC();</div><div class="line">             break;</div><div class="line">         case STYLE_SWITCH_CONTAINER:</div><div class="line">             setSC();</div><div class="line">             break;</div><div class="line">     &#125;</div><div class="line"> &#125;</div></pre></td></tr></table></figure>
+<p>设置客服的输入模式:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * 设置 ExtensionBar 客服输入模式</div><div class="line"> *</div><div class="line"> * @param mode 输入模式, 参照: &#123;@link CustomServiceMode&#125;</div><div class="line"> */</div><div class="line">public void setExtensionBarMode(CustomServiceMode mode)</div></pre></td></tr></table></figure>
+<p>InpuBar.java 中有对 5 种组合 以及 客服 的枚举注释。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div></pre></td><td class="code"><pre><div class="line">public class InputBar &#123;</div><div class="line">    public enum Style &#123;</div><div class="line">        /**</div><div class="line">         * 录音切换-输入框-扩展</div><div class="line">         */</div><div class="line">        STYLE_SWITCH_CONTAINER_EXTENSION(0x123),</div><div class="line">        /**</div><div class="line">         * 录音切换-输入框</div><div class="line">         */</div><div class="line">        STYLE_SWITCH_CONTAINER(0x120),</div><div class="line">        /**</div><div class="line">         * 输入框-扩展</div><div class="line">         */</div><div class="line">        STYLE_CONTAINER_EXTENSION(0x023),</div><div class="line">        /**</div><div class="line">         * 扩展-输入框</div><div class="line">         */</div><div class="line">        STYLE_EXTENSION_CONTAINER(0x320),</div><div class="line">        /**</div><div class="line">         * 仅有输入框</div><div class="line">         */</div><div class="line">        STYLE_CONTAINER(0x020);</div><div class="line"></div><div class="line">        int v;</div><div class="line"></div><div class="line">        Style(int v) &#123;</div><div class="line">            this.v = v;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        public static Style getStyle(int v) &#123;</div><div class="line">            Style result = null;</div><div class="line">            for (Style style : values()) &#123;</div><div class="line">                if (style.v == v) &#123;</div><div class="line">                    result = style;</div><div class="line">                    break;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            return result;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public enum Type &#123;</div><div class="line">        /**</div><div class="line">         * 默认输入模式</div><div class="line">         */</div><div class="line">        TYPE_DEFAULT,</div><div class="line"></div><div class="line">        /**</div><div class="line">         * 客服输入模式：仅机器人</div><div class="line">         */</div><div class="line">        TYPE_CS_ROBOT,</div><div class="line"></div><div class="line">        /**</div><div class="line">         * 客服输入模式：仅机人工</div><div class="line">         */</div><div class="line">        TYPE_CS_HUMAN,</div><div class="line"></div><div class="line">        /**</div><div class="line">         * 客服智能输入模式：机器人优先</div><div class="line">         */</div><div class="line">        TYPE_CS_ROBOT_FIRST,</div><div class="line"></div><div class="line">        /**</div><div class="line">         * 客服智能输入模式：人工优先</div><div class="line">         */</div><div class="line">        TYPE_CS_HUMAN_FIRST</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">public class TestFragment extends ConversationFragment &#123;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) &#123;</div><div class="line">        View view = super.onCreateView(inflater, container, savedInstanceState);</div><div class="line">        mRongExtension = (RongExtension) view.findViewById(R.id.input_board);</div><div class="line">        return view;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    ...</div><div class="line">    /**</div><div class="line">     * 点击 “+” 号区域, 回调中携带 ViewGroup</div><div class="line">     *</div><div class="line">     * @param v              “+” 号 view 实例</div><div class="line">     * @param extensionBoard 用于展示 plugin 的 ViewGroup</div><div class="line">     */</div><div class="line">    @Override</div><div class="line">    public void onPluginToggleClick(View v, ViewGroup extensionBoard) &#123;</div><div class="line">        super.onPluginToggleClick(v, extensionBoard);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    @Override</div><div class="line">    public void beforeTextChanged(CharSequence s, int start, int count, int after) &#123;</div><div class="line">        super.beforeTextChanged(s, start, count, after);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    @Override</div><div class="line">    public void onTextChanged(CharSequence s, int start, int before, int count) &#123;</div><div class="line">        super.onTextChanged(s, start, before, count);</div><div class="line">    &#125;</div><div class="line">    ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="替换输入框背景、图片"><a href="#替换输入框背景、图片" class="headerlink" title="替换输入框背景、图片"></a>替换输入框背景、图片</h3><p>1 rc_ext_extension_bar.xml 输入框布局文件，是整个输入框的容器，xml 内有对各部分组件的注释描述。</p>
+<p><img src="http://img.blog.csdn.net/20161122110005486" alt="网络下可见"></p>
+<p>2 输入框的 EditText 的布局文件是 rc_ext_input_edit_text.xml , 可通过此文件替换你需要的背景。</p>
+<p><img src="http://img.blog.csdn.net/20161123114942370" alt="这里写图片描述"></p>
+<p>3 语音输入的布局文件是 rc_ext_voice_input.xml</p>
+<p><img src="http://img.blog.csdn.net/20161123115034121" alt="这里写图片描述"></p>
+<hr>
+<h3 id="默认扩展功能插件区域-Plugins"><a href="#默认扩展功能插件区域-Plugins" class="headerlink" title="默认扩展功能插件区域 Plugins"></a>默认扩展功能插件区域 Plugins</h3><h4 id="注意-下列功能插件需要展示用户头像和昵称的均需开发者对用户信息做实现。"><a href="#注意-下列功能插件需要展示用户头像和昵称的均需开发者对用户信息做实现。" class="headerlink" title="注意:下列功能插件需要展示用户头像和昵称的均需开发者对用户信息做实现。"></a>注意:下列功能插件需要展示用户头像和昵称的均需开发者对用户信息做实现。</h4><p>1 相册已经封装到了 IMKit 里面 ImagePlugin.java ，包含发送图片以及拍照发送的功能。</p>
+<hr>
+<p>2 文件已经封装到 IMKit  里面 FilePlugin.java。</p>
+<hr>
+<p>3 位置功能 内置了已经实现了基于高德地图的 发送当前位置 以及 位置共享 功能，如果开发者有其他厂商地图的需求，需要自定义 Plugin。如果开发者需要使用默认实现好了的地理位置的功能，只需要将 高德地图(融云官网 Android SDK 内下载) 的三个 jar 添加至 IMKlit Module Libs 目录下即可。</p>
+<p><img src="http://img.blog.csdn.net/20161121170458576" alt="这里写图片描述"></p>
+<ul>
+<li>DefaultLocationPlugin.java 地理位置</li>
+<li>RealTimeLocationPlugin.java 位置共享</li>
+<li>CombineLocationPlugin.java 地理位置 和 位置共享的功能聚合</li>
+</ul>
+<hr>
+<p>4 音频、视频两个功能插件需要依赖 CallKit 、CallLib 两个 Module，Module 官网 Android SDK 提供下载。需要注意的是使用音视频功能需要在官网开发者账号中开通相关服务，开通后生效时间为 1 个自然日。 依赖配置可参考官网 Demo <a href="https://github.com/sealtalk/sealtalk-android" target="_blank" rel="external">sealtalk</a> 。</p>
+<hr>
+<p>5 红包功能需要在官网 Android sdk 中获取 RedPacket Module ，将其依赖至你的主工程下，另外红包提供接口, 进入”我的钱包” ：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * 进入我的钱包页面</div><div class="line"> * @param activity :从哪个activity的跳转</div><div class="line"> */</div><div class="line">JrmfClient.intentWallet(Activity activity);</div></pre></td></tr></table></figure>
+<p>目前红包功能仅支持 Private、Group 两种会话类型。 </p>
+<hr>
+<p>6 语音输入功能基于科大讯飞。需要从 <a href="https://github.com/sealtalk/sealtalk-android" target="_blank" rel="external">sealtalk</a> 中获取 Recognizer Module </p>
+<hr>
+<p>上述 7 个功能插件。代码部分已经由 SDK 完成，开发者只需添加 Jar 和 Module 就能开箱即用。</p>
+<p><img src="http://img.blog.csdn.net/20161121173745573" alt="网络下可见"></p>
+<h1 id="自定义-1"><a href="#自定义-1" class="headerlink" title="自定义"></a>自定义</h1><h2 id="一-、DefaultExtensionModule"><a href="#一-、DefaultExtensionModule" class="headerlink" title="一 、DefaultExtensionModule"></a>一 、DefaultExtensionModule</h2><p>SDK 中默认提供了一套+号扩展插件功能区域的类，即 DefaultExtensionModule，即便你不做任何代码的编写都会自动适配这套 DefaultExtensionModule 下包含的 Plugin 以及 EmoticonTab。</p>
+<h2 id="二、注册-和-去重"><a href="#二、注册-和-去重" class="headerlink" title="二、注册 和 去重"></a>二、注册 和 去重</h2><p>如果需要自定义功能插件 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">RongExtensionManager.getInstance().registerExtensionModule(new SampleExtensionModule());</div></pre></td></tr></table></figure>
+<p>注册上面代码的需要在 RongIM.init 后。我们建议在 Application 的 Context 中进行注册，此时是最佳注册时机。</p>
+<p>需要注意的是要对 DefaultExtensionModule 进行去重不然 Plugins 下的功能可能会出现重复，例如出现两套 图片、文件、音视频的 Plugin。去重示例代码如下:</p>
+<p><img src="http://img.blog.csdn.net/20161122161425924" alt="网络下可见"></p>
+<h2 id="三-Plugins-和-EmoticonTabs"><a href="#三-Plugins-和-EmoticonTabs" class="headerlink" title="三 Plugins 和 EmoticonTabs"></a>三 Plugins 和 EmoticonTabs</h2><p>如果仅仅只是想 自定义 Plugins 或 EmoticonTabs 其中一项，另外一项保持默认跟随 sdk 配置，开发者可自定义继承自 DefaultExtensionModule 的类。重写类中的 getPluginModules 或者 getEmoticonTabs 方法。需要被保留为默认跟随 SDK 配置项的即调用 super 其父类中的方法即可。如果 Plugins 或 EmoticonTabs 两项需要全部自定义则可直接实现 IExtensionModule。</p>
+<p><img src="http://img.blog.csdn.net/20161122164322919" alt="网络下可见"></p>
+<h2 id="四-自定义-Plugin-和-Plugins-排序"><a href="#四-自定义-Plugin-和-Plugins-排序" class="headerlink" title="四 自定义 Plugin 和 Plugins 排序"></a>四 自定义 Plugin 和 Plugins 排序</h2><p><img src="http://img.blog.csdn.net/20161123114429748" alt="这里写图片描述"></p>
+<p>示例的插件模块代码需要自定义类继承 IPluginModule ：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line">public class SamplePlugin implements IPluginModule &#123;</div><div class="line"></div><div class="line">    Conversation.ConversationType conversationType;</div><div class="line">    String targetId;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public Drawable obtainDrawable(Context context) &#123;</div><div class="line">        //设置插件 Plugin 图标</div><div class="line">        return ContextCompat.getDrawable(context, R.drawable.rc_ext_plugin_image_selector);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public String obtainTitle(Context context) &#123;</div><div class="line">        //设置插件 Plugin 展示文字</div><div class="line">        return &quot;示例&quot;;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public void onClick(final Fragment currentFragment, RongExtension extension) &#123;</div><div class="line">        //示例获取 会话类型、targetId、Context,此处可根据产品需求自定义逻辑，如:开启新的 Activity 等。</div><div class="line">        conversationType = extension.getConversationType();</div><div class="line">        targetId = extension.getTargetId();</div><div class="line">        Message message = Message.obtain(targetId, conversationType, TextMessage.obtain(&quot;示例插件功能&quot;));</div><div class="line">        RongIM.getInstance().sendMessage(message, null, null, new IRongCallback.ISendMessageCallback() &#123;</div><div class="line">            @Override</div><div class="line">            public void onAttached(Message message) &#123;</div><div class="line"></div><div class="line">            &#125;</div><div class="line"></div><div class="line">            @Override</div><div class="line">            public void onSuccess(Message message) &#123;</div><div class="line">                Toast.makeText(currentFragment.getActivity(), &quot;消息发送成功, 示例获取 Context&quot;, Toast.LENGTH_SHORT).show();</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            @Override</div><div class="line">            public void onError(Message message, RongIMClient.ErrorCode errorCode) &#123;</div><div class="line"></div><div class="line">            &#125;</div><div class="line"></div><div class="line">        &#125;);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public void onActivityResult(int requestCode, int resultCode, Intent data) &#123;</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>调用 SamplePlugin ：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">public class SampleExtensionModule extends DefaultExtensionModule &#123;</div><div class="line">    @Override</div><div class="line">    public List&lt;IPluginModule&gt; getPluginModules(Conversation.ConversationType conversationType) &#123;</div><div class="line">//        super.getPluginModules(conversationType);  如果需要对红包进行排序可从父类中的 getPluginModules 集合中过滤取出 JrmfExtensionModule</div><div class="line">        List&lt;IPluginModule&gt; pluginModuleList = new ArrayList&lt;&gt;();</div><div class="line">        pluginModuleList.add(new SamplePlugin());</div><div class="line">        return pluginModuleList;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public List&lt;IEmoticonTab&gt; getEmoticonTabs() &#123;</div><div class="line">        return super.getEmoticonTabs();</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>排序: 决定扩展插件 Plugins 的展示顺序是由你返回集合的顺序决定的。<br>例如:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">    @Override</div><div class="line">    public List&lt;IPluginModule&gt; getPluginModules(Conversation.ConversationType conversationType) &#123;</div><div class="line">//        super.getPluginModules(conversationType);  如果需要对红包进行排序可从父类中的 getPluginModules 集合中过滤取出 JrmfExtensionModule</div><div class="line">        List&lt;IPluginModule&gt; pluginModuleList = new ArrayList&lt;&gt;();</div><div class="line"></div><div class="line">        pluginModuleList.add(new SamplePlugin());</div><div class="line">        pluginModuleList.add(new LocationPlugin());</div><div class="line">        pluginModuleList.add(new ImagePlugin());</div><div class="line">        // 此时扩展区域的展示顺序应该为 : 示例、位置、图片、红包</div><div class="line">        return pluginModuleList;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p><img src="http://img.blog.csdn.net/20161123113854825" alt="这里写图片描述"></p>
+<p> 自定义 Plugins 时例子也可参考  DefaultExtensionModule 中的 getPluginModules 方法。</p>
+<h2 id="五、自定义-EmoticonTabs"><a href="#五、自定义-EmoticonTabs" class="headerlink" title="五、自定义 EmoticonTabs"></a>五、自定义 EmoticonTabs</h2><p><img src="http://img.blog.csdn.net/20161123113744480" alt="这里写图片描述"></p>
+<p>自定义类实现 IEmoticonTab ，示例代码如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">public class SampleTab implements IEmoticonTab &#123;</div><div class="line">    @Override</div><div class="line">    public Drawable obtainTabDrawable(Context context) &#123;</div><div class="line">        //展示的图标</div><div class="line">        return context.getResources().getDrawable(R.drawable.rc_tab_emoji);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public View obtainTabPager(Context context) &#123;</div><div class="line">        //初始化 Tab 中的内容， 返回 View 或 View 的子类皆可。还可参考 EmojiTab 中 obtainTabPager</div><div class="line">        TextView textView = new TextView(context);</div><div class="line">        textView.setText(&quot;Sample EmoticonTabs &quot;);</div><div class="line">        return textView;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public void onTableSelected(int position) &#123;</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>调用:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line">public class SampleExtensionModule extends DefaultExtensionModule &#123;</div><div class="line">    private EditText mEditText;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public List&lt;IPluginModule&gt; getPluginModules(Conversation.ConversationType conversationType) &#123;</div><div class="line">//        super.getPluginModules(conversationType);  如果需要对红包进行排序可从父类中的 getPluginModules 集合中过滤取出 JrmfExtensionModule</div><div class="line">        List&lt;IPluginModule&gt; pluginModuleList = new ArrayList&lt;&gt;();</div><div class="line"></div><div class="line">        pluginModuleList.add(new SamplePlugin());</div><div class="line">        pluginModuleList.add(new LocationPlugin());</div><div class="line">        pluginModuleList.add(new ImagePlugin());</div><div class="line">        // 此时扩展区域的展示顺序应该为 : 示例、位置、图片、红包</div><div class="line">        return pluginModuleList;</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line">    @Override</div><div class="line">    public void onAttachedToExtension(RongExtension extension) &#123;</div><div class="line">        super.onAttachedToExtension(extension);</div><div class="line">        mEditText = extension.getInputEditText();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public void onDetachedFromExtension() &#123;</div><div class="line">        super.onDetachedFromExtension();</div><div class="line">        mEditText = null;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public List&lt;IEmoticonTab&gt; getEmoticonTabs() &#123;</div><div class="line">        List&lt;IEmoticonTab&gt; list = new ArrayList&lt;&gt;();</div><div class="line">        EmojiTab emojiTab = new EmojiTab();</div><div class="line">        emojiTab.setOnItemClickListener(new IEmojiItemClickListener() &#123;</div><div class="line">            @Override</div><div class="line">            public void onEmojiClick(String emoji) &#123;</div><div class="line">                int start = mEditText.getSelectionStart();</div><div class="line">                mEditText.getText().insert(start, emoji);</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            @Override</div><div class="line">            public void onDeleteClick() &#123;</div><div class="line">                mEditText.dispatchKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_DEL));</div><div class="line">            &#125;</div><div class="line">        &#125;);</div><div class="line">        list.add(emojiTab);</div><div class="line">        list.add(new SampleTab());</div><div class="line">        return list;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>排序方式也是按照集合中元素的顺序。</p>
+<hr>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li><a href="http://support.rongcloud.cn/kb/NTQ4" target="_blank" rel="external">http://support.rongcloud.cn/kb/NTQ4</a></li>
+<li><a href="https://github.com/sealtalk/sealtalk-android" target="_blank" rel="external">https://github.com/sealtalk/sealtalk-android</a></li>
+</ul>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="img/alipay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="https://github.com/13120241790/13120241790.github.io/blob/master/img/wechat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/07/06/融云-Android-SDK2-8-0-Extension文档/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-hexo">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/06/不蒜子统计/" class="archive-article-date">
-  	<time datetime="2017-07-06T03:32:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-06</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/06/不蒜子统计/">不蒜子统计</a>
-    </h1>
+  
+    <a href="/2017/07/06/不蒜子统计/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">不蒜子统计</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "http://yoursite.com/2017/07/06/融云-Android-SDK2-8-0-Extension文档/", 
+    sourceId: "融云-Android-SDK2-8-0-Extension文档",
+    productKey: "true",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/03/hexo-github搭建自主博客/" class="archive-article-date">
-  	<time datetime="2017-07-03T10:22:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/03/hexo-github搭建自主博客/">hexo + github搭建自主博客</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -273,8 +475,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
