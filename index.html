@@ -169,12 +169,14 @@
         <h2 id="统计系统"><a href="#统计系统" class="headerlink" title="统计系统"></a>统计系统</h2><p>统计系统能时刻统计网站和博客的访问量，是不是会让自己觉得更加有成就感。写博客更加有动力呢？</p>
 <p>之前博主尝试了百度站长统计,感觉比较麻烦。我需求的效果是不光统计还要展示在博客页面上,一个群友推荐了不蒜子。简单好用几分钟就搞定了</p>
 <h2 id="不蒜子"><a href="#不蒜子" class="headerlink" title="不蒜子"></a>不蒜子</h2><p><a href="http://busuanzi.ibruce.info/" target="_blank" rel="external">不蒜子</a></p>
-<p>step1:<br> <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"><br></script><br>不蒜子可以给任何类型的个人站点使用，如果你是用的hexo，打开themes/你的主题/layout/_partial/footer.ejs添加上述脚本即可，当然你也可以添加到 header 中。</p>
+<p>step1:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"> <span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">"//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>不蒜子可以给任何类型的个人站点使用，如果你是用的hexo，打开themes/你的主题/layout/_partial/footer.ejs添加上述脚本即可，当然你也可以添加到 header 中。</p>
 <p>step:</p>
 <p>要显示站点总访问量，复制以下代码添加到你需要显示的位置。有两种算法可选：</p>
 <p>算法a：pv的方式，单个用户连续点击n篇文章，记录n次访问量。</p>
-<p><span id="busuanzi_container_site_pv"><br>    本站总访问量<span id="busuanzi_value_site_pv"></span>次<br></span><br>算法b：uv的方式，单个用户连续点击n篇文章，只记录1次访客数。</p>
-<p><span id="busuanzi_container_site_uv"><br>  本站访客数<span id="busuanzi_value_site_uv"></span>人次<br></span><br>如果你是用的hexo，打开themes/你的主题/layout/_partial/footer.ejs添加即可。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_container_site_pv"</span>&gt;</span></div><div class="line">    本站总访问量<span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_pv"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>次</div><div class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">算法b：uv的方式，单个用户连续点击n篇文章，只记录1次访客数。</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_container_site_uv"</span>&gt;</span></div><div class="line">  本站访客数<span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_uv"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>人次</div><div class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>如果你是用的hexo，打开themes/你的主题/layout/_partial/footer.ejs添加即可。</p>
 <blockquote>
 <p>实际展示效果可访问本站底部统计效果</p>
 </blockquote>
@@ -279,62 +281,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/07/03/hexo-github搭建自主博客/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/03/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2017/07/03/hello-world/" class="archive-article-date">
-  	<time datetime="2017-07-03T07:39:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/07/03/hello-world/">展开全文 >></a>
         </p>
       
 
