@@ -6,17 +6,39 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | 阿明的技术博客</title>
+  <title>30分钟搭建Java后端开发环境 | 阿明的技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="make a decision and keep on!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="阿明的技术博客">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+  <meta name="description" content="我想每个前端都有个后端梦  引言 是不是对后端开发多少有点敬畏感？每个端都没有后台的支撑和交互都是一座座孤岛。 前端开发多年不懂不会后端开发有没有一种武功秘籍研习多年不得融会贯通之感?  本文将以 Java 语言 Mac 环境为视角搭建 Java 后端环境。 注:文中所指前端泛指 web 前端以及 Android 、iOS等广义前端。 JDK 8 配置下载地址:http://www.oracle">
+<meta property="og:type" content="article">
+<meta property="og:title" content="30分钟搭建Java后端开发环境">
+<meta property="og:url" content="http://yoursite.com/2017/07/19/30分钟搭建Java后端开发环境/index.html">
 <meta property="og:site_name" content="阿明的技术博客">
-<meta property="og:description" content="make a decision and keep on!">
+<meta property="og:description" content="我想每个前端都有个后端梦  引言 是不是对后端开发多少有点敬畏感？每个端都没有后台的支撑和交互都是一座座孤岛。 前端开发多年不懂不会后端开发有没有一种武功秘籍研习多年不得融会贯通之感?  本文将以 Java 语言 Mac 环境为视角搭建 Java 后端环境。 注:文中所指前端泛指 web 前端以及 Android 、iOS等广义前端。 JDK 8 配置下载地址:http://www.oracle">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719150835220?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719154534549?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719154718653?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719154921143?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719155118851?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719160858149?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719160941421?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719161006627?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719161143732?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719161827359?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719162544219?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719163441533?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719163519913?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719163654770?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719163740898?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719163836073?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719164128492?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719164414178?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719164433521?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170719164446269?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2017-07-19T08:57:23.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="阿明的技术博客">
-<meta name="twitter:description" content="make a decision and keep on!">
+<meta name="twitter:title" content="30分钟搭建Java后端开发环境">
+<meta name="twitter:description" content="我想每个前端都有个后端梦  引言 是不是对后端开发多少有点敬畏感？每个端都没有后台的支撑和交互都是一座座孤岛。 前端开发多年不懂不会后端开发有没有一种武功秘籍研习多年不得融会贯通之感?  本文将以 Java 语言 Mac 环境为视角搭建 Java 后端环境。 注:文中所指前端泛指 web 前端以及 Android 、iOS等广义前端。 JDK 8 配置下载地址:http://www.oracle">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20170719150835220?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
   
     <link rel="alternative" href="/atom.xml" title="阿明的技术博客" type="application/atom+xml">
   
@@ -158,159 +180,282 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-30分钟搭建Java后端开发环境" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      30分钟搭建Java后端开发环境
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/19/30分钟搭建Java后端开发环境/" class="archive-article-date">
+
+        
+        <a href="/2017/07/19/30分钟搭建Java后端开发环境/" class="archive-article-date">
   	<time datetime="2017-07-19T08:51:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-19</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/19/30分钟搭建Java后端开发环境/">30分钟搭建Java后端开发环境</a>
-    </h1>
-  
+        
+      </header>
+    
+<!-- 目录内容 -->
 
-        <div class="article-info info-on-right">
-          
-          
+    <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+          <span class="btn-bg"></span>
+          <span class="btn-text">文章导航</span>
+          </p>
+	<div id="toc-article" class="toc-article">
+	    <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+		<strong class="toc-title">文章目录</strong>
+           <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#引言"><span class="toc-number">1.</span> <span class="toc-text">引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JDK-8-配置"><span class="toc-number">2.</span> <span class="toc-text">JDK 8 配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IDE-intellij-idea"><span class="toc-number">3.</span> <span class="toc-text">IDE intellij idea</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#破解步骤"><span class="toc-number">3.1.</span> <span class="toc-text">破解步骤</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tomcat-8"><span class="toc-number">4.</span> <span class="toc-text">Tomcat 8</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#intellij-idea-部署-tomcat"><span class="toc-number">5.</span> <span class="toc-text">intellij idea 部署 tomcat</span></a></li></ol>
+         </div>
+   <script type="text/javascript">
+	function showToc(){
+		var toc_article = document.getElementById("toc-article");
+		var show_toc_btn = document.getElementById("show-toc-btn");
+		toc_article.setAttribute("style","display:block");
+		show_toc_btn.setAttribute("style","display:none");
+		};
+	function showBtn(){
+		var toc_article = document.getElementById("toc-article");
+		var show_toc_btn = document.getElementById("show-toc-btn");
+		toc_article.setAttribute("style","display:none");
+		show_toc_btn.setAttribute("style","display:block");
+		};
+   </script>
+      
+<!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>我想每个前端都有个后端梦</p>
+</blockquote>
+<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><ul>
+<li>是不是对后端开发多少有点敬畏感？每个端都没有后台的支撑和交互都是一座座孤岛。</li>
+<li>前端开发多年不懂不会后端开发有没有一种武功秘籍研习多年不得融会贯通之感?</li>
+</ul>
+<p>本文将以 Java 语言 Mac 环境为视角搭建 Java 后端环境。</p>
+<p>注:文中所指前端泛指 web 前端以及 Android 、iOS等广义前端。</p>
+<h2 id="JDK-8-配置"><a href="#JDK-8-配置" class="headerlink" title="JDK 8 配置"></a>JDK 8 配置</h2><p>下载地址:<br><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="external">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a><br>Mac 直接安装后，Mac os 已经默认配置好了环境变量，windows 用户还需要配置下环境变量。</p>
+<ul>
+<li>验证是否配置成功 : 打开终端(Terminal、cmd)输入: Java -version </li>
+</ul>
+<p>java version “1.8.0_112”<br>Java(TM) SE Runtime Environment (build 1.8.0_112-b16)<br>Java HotSpot(TM) 64-Bit Server VM (build 25.112-b16, mixed mode)<br>如果告诉你版本号，恭喜你配置成功。如果是找不到命令，那么你需要去检查一下环境变量的配置。</p>
+<h2 id="IDE-intellij-idea"><a href="#IDE-intellij-idea" class="headerlink" title="IDE intellij idea"></a>IDE intellij idea</h2><blockquote>
+<p>工欲善其事必先利其器</p>
+</blockquote>
+<p>可能这里有的同学疑问为什么不用 eclipse/myeclipse 作为开发工具？</p>
+<ul>
+<li>3年前还在开发 Android 的同学可能也经历过使用 eclipse 转到 Android Studio 的阵痛，各种快捷方式和界面变化的不习惯。心里把 google 骂了一千遍吧，现在让你回去 eclipse 你还回得去吗？我只想说卧槽~好用！</li>
+<li>intellij idea 是未来的趋势，目前的市场份额也在逐年上升。</li>
+<li><p>强大的索引功能 和 强大的调试功能</p>
+<p>如果非要我还给一点理由:界面好看逼格高</p>
+</li>
+</ul>
+<p><img src="http://img.blog.csdn.net/20170719150835220?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>下载地址: </p>
+<p><a href="https://www.jetbrains.com/idea/download/#section=mac" target="_blank" rel="external">https://www.jetbrains.com/idea/download/#section=mac</a> </p>
+<p>idea 分为两个版本，就像 eclipse 对比 myeclipse </p>
+<ul>
+<li>Community 社区版本,功能比较少。免费</li>
+<li>Ultimate 旗舰版，功能齐全。收费</li>
+</ul>
+<p>你在搞笑吗，zai zhong guo xiang zuo shou fei ruan jian？(我们只是暂时使用。有条件请付费获取正版，尊重他人劳动成果)</p>
+<h3 id="破解步骤"><a href="#破解步骤" class="headerlink" title="破解步骤"></a>破解步骤</h3><p>获取注册码 : <a href="http://idea.lanyus.com/" target="_blank" rel="external">http://idea.lanyus.com/</a><br>请将“0.0.0.0 account.jetbrains.com”添加到hosts文件中<br>Mac hosts 地址: /private/etc/hosts (温馨提示修改hosts文件需要系统可读可写权限)<br><img src="http://img.blog.csdn.net/20170719154534549?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>安装的时候选择注册码选项</p>
+<p><img src="http://img.blog.csdn.net/20170719154718653?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>主题等可以随心选自己喜好的</p>
+<p><img src="http://img.blog.csdn.net/20170719154921143?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>删除一部分不必要的组件</p>
+<p><img src="http://img.blog.csdn.net/20170719155118851?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>继续 next , 上面不重要的步骤没有每步都截图。当看到上图的画面恭喜你，安装且破解成功~！如果有没有成功安装的同学不要灰心,可以在评论下方大家一起交流和沟通。</p>
+<h2 id="Tomcat-8"><a href="#Tomcat-8" class="headerlink" title="Tomcat 8"></a>Tomcat 8</h2><blockquote>
+<p>如果 Apache 不是基金会而是个商业盈利公司，想想他的市值都可怕。</p>
+</blockquote>
+<p>下载地址: <a href="http://tomcat.apache.org/download-80.cgi" target="_blank" rel="external">http://tomcat.apache.org/download-80.cgi</a><br>Mac 版本的对应下载 tar.gz 格式文件包</p>
+<ol>
+<li><p>将解压的 apache tomcat 安装包丢到资源库(Library)当中。开打 Terminal 执行<br><img src="http://img.blog.csdn.net/20170719160858149?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</li>
+<li><p>打开 终端（Terminal），修改一下文件夹的权限<br> sudo chmod 755 /Library/apache-tomcat-8.5.16/bin/*.sh<br><img src="http://img.blog.csdn.net/20170719160941421?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</li>
+<li><p>按回车键之后会提示输入密码，请输入管理员密码。然后继续下面的命令打开tomcat服务<br>sudo sh startup.sh<br><img src="http://img.blog.csdn.net/20170719161006627?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</li>
+<li><p>打开浏览器，输入 <a href="http://localhost:8080/" target="_blank" rel="external">http://localhost:8080/</a><br>回车之后如果看到Apache Tomcat，表示已经成功运行Tomcat<br><img src="http://img.blog.csdn.net/20170719161143732?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</li>
+<li><p>命令 sudo sh /Library/Tomcat/bin/shutdown.sh 可以关闭Tomcat。</p>
+</li>
+</ol>
+<h2 id="intellij-idea-部署-tomcat"><a href="#intellij-idea-部署-tomcat" class="headerlink" title="intellij idea 部署 tomcat"></a>intellij idea 部署 tomcat</h2><ul>
+<li>在 intellij idea 创建一个工程<br><img src="http://img.blog.csdn.net/20170719161827359?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></li>
+<li>选择右上角的 Edit Configurations… 看到配置界面<br><img src="http://img.blog.csdn.net/20170719162544219?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"> </li>
+<li>Defaults 下拉 选择 Tomcat Server 注意和 TomEE Server 区分<br><img src="http://img.blog.csdn.net/20170719163441533?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></li>
+</ul>
+<p><img src="http://img.blog.csdn.net/20170719163519913?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<ul>
+<li>远程和本地 选择本地 loacl, 把我们开始在资源库配置的 tomcat 路径选中上去 点击 Apply 应用。<br><img src="http://img.blog.csdn.net/20170719163654770?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></li>
+</ul>
+<p><img src="http://img.blog.csdn.net/20170719163740898?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<ul>
+<li>选择左上角的 + 号，选中Tomcat Sever 在 Deployment 为其选择一个项目工程 点击 Apply 应用</li>
+</ul>
+<p><img src="http://img.blog.csdn.net/20170719163836073?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><img src="http://img.blog.csdn.net/20170719164128492?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<ul>
+<li>点击 OK 回到主界面，右上角 Tomcat 小图标旁的绿色箭头，点击 run。 启动 Tomcat 服务器。Server Output 输出相关信息表明启动服务成功，另外浏览器也会去访问本地 local 8080 的地址。</li>
+</ul>
+<p><img src="http://img.blog.csdn.net/20170719164414178?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><img src="http://img.blog.csdn.net/20170719164433521?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><img src="http://img.blog.csdn.net/20170719164446269?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>至此 idea 部署 Tomcat 配置完毕~！</p>
+<blockquote>
+<p>写博客不容易，未经允许不得转载。喜欢的话点个赞或评论呗~</p>
+</blockquote>
 
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://img.blog.csdn.net/20170706174103624?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://img.blog.csdn.net/20170706174003523?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTk5ODYzMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+      i    </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/07/19/30分钟搭建Java后端开发环境/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/06/融云_getToken/" class="archive-article-date">
-  	<time datetime="2017-07-06T08:07:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/06/融云_getToken/">融云_getToken</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/06/融云-Android-SDK2-8-0-Extension文档/" class="archive-article-date">
-  	<time datetime="2017-07-06T03:47:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/06/融云-Android-SDK2-8-0-Extension文档/">融云_Android_SDK2.8.0+_Extension文档</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-hexo">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/06/不蒜子统计/" class="archive-article-date">
-  	<time datetime="2017-07-06T03:32:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/06/不蒜子统计/">不蒜子统计</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/03/hexo-github搭建自主博客/" class="archive-article-date">
-  	<time datetime="2017-07-03T10:22:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/03/hexo-github搭建自主博客/">hexo + github搭建自主博客</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/07/06/融云_getToken/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">融云_getToken</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
-
-    
+</nav>
 
 
+
+
+
+  
+  
+  
+
+  <div id="gitment"></div>
+
+<!-- 主页不要加载gitment -->
+
+
+<script> 
+var gitment = new Gitment({
+ owner: '13120241790',
+ repo: '13120241790.github.io',
+ oauth: {
+ client_id: 'e3f27e7da78c6e1ab715',
+ client_secret: 'eb1e759c4b14050b2d5fbf262eefac031793c750',
+ },
+})
+gitment.render('gitment')
+</script>
+ 
+
+
+
+  
+
+  
+
+
+
+  
 
 
           </div>
@@ -343,8 +488,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
